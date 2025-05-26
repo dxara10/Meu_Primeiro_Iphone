@@ -1,0 +1,12 @@
+com/iphone/app/service/AparelhoTelefonico.class
+com/iphone/app/ui/IPhoneApp.class
+com/iphone/app/service/NavegadorInternet.class
+com/iphone/app/controller/IPhone.class
+com/iphone/app/model/PastaMusical.class
+com/iphone/app/model/AbaNavegador.class
+com/iphone/app/model/Contato.class
+com/iphone/app/model/AgendaTelefonica.class
+com/iphone/app/service/ReprodutorMusical.class
+com/iphone/app/model/Musica.class
+com/iphone/app/model/Playlist.class
+com/iphone/app/model/Discador.class

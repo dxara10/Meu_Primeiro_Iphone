@@ -102,4 +102,16 @@ public class IPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
     public void listarHistorico() {
         // Lógica para listar histórico de navegação
     }
+
+    public void adicionarPlaylist(Playlist playlist) {
+        this.playlists.add(playlist);
+    }
+
+    public AgendaTelefonica getAgenda() {
+        return this.agenda;
+    }
+
+    public Discador getDiscador() {
+        return this.discador;
+    }
 }
