@@ -1,7 +1,5 @@
 com/iphone/app/service/AparelhoTelefonico.class
-com/iphone/app/ui/IPhoneApp.class
 com/iphone/app/service/NavegadorInternet.class
-com/iphone/app/controller/IPhone.class
 com/iphone/app/model/PastaMusical.class
 com/iphone/app/model/AbaNavegador.class
 com/iphone/app/model/Contato.class

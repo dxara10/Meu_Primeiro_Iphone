@@ -4,30 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AgendaTelefonica {
-    private List<Contato> contatos;
-
-    public AgendaTelefonica() {
-        this.contatos = new ArrayList<>();
-    }
+    private List<Contato> contatos = new ArrayList<>();
 
     public void adicionarContato(Contato contato) {
         contatos.add(contato);
     }
 
-    public void removerContato(Contato contato) {
-        contatos.remove(contato);
-    }
-
-    public Contato buscarContato(String nome) {
-        for (Contato contato : contatos) {
-            if (contato.getNome().equalsIgnoreCase(nome)) {
-                return contato;
-            }
+    public void listarContatos() {
+        for (Contato c : contatos) {
+            System.out.println(c.getNome());
         }
-        return null;
     }
 
-    public List<Contato> listarContatos() {
-        return new ArrayList<>(contatos);
+    public List<Contato> getContatos() {
+        return contatos;
     }
 }

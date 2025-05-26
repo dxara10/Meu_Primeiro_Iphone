@@ -27,8 +27,6 @@ public class IPhoneApp {
         // Adicionando contato
         Contato contato = new Contato("John Doe", "123456789", "john@example.com");
         iphone.getAgenda().adicionarContato(contato);
-        
-        // Realizando chamada
         iphone.getDiscador().discar("123456789");
         
         // Listando músicas na playlist
@@ -38,5 +36,15 @@ public class IPhoneApp {
         // Listando contatos na agenda
         System.out.println("Contatos na Agenda:");
         iphone.getAgenda().listarContatos();
+    }
+    
+    public Object getAgenda() {
+        // implementação
+        return null;
+    }
+
+    public Object getDiscador() {
+        // implementação
+        return null;
     }
 }

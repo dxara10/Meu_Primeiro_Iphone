@@ -14,15 +14,13 @@ public class IPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
     private List<Playlist> playlists;
     private List<String> historicoChamadas;
     private List<String> abasAtivas;
-    private AgendaTelefonica agenda;
-    private Discador discador;
+    private AgendaTelefonica agenda = new AgendaTelefonica();
+    private Discador discador = new Discador();
 
     public IPhone() {
         this.playlists = new ArrayList<>();
         this.historicoChamadas = new ArrayList<>();
         this.abasAtivas = new ArrayList<>();
-        this.agenda = new AgendaTelefonica();
-        this.discador = new Discador();
     }
 
     // Implementação dos métodos da interface ReprodutorMusical
@@ -108,10 +106,10 @@ public class IPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
     }
 
     public AgendaTelefonica getAgenda() {
-        return this.agenda;
+        return agenda;
     }
 
     public Discador getDiscador() {
-        return this.discador;
+        return discador;
     }
 }

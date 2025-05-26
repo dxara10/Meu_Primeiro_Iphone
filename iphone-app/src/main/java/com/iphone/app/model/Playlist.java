@@ -5,26 +5,23 @@ import java.util.List;
 
 public class Playlist {
     private String nome;
-    private List<Musica> musicas;
+    private List<Musica> musicas = new ArrayList<>();
 
     public Playlist(String nome) {
         this.nome = nome;
-        this.musicas = new ArrayList<>();
-    }
-
-    public String getNome() {
-        return nome;
     }
 
     public void adicionarMusica(Musica musica) {
         musicas.add(musica);
     }
 
-    public void removerMusica(Musica musica) {
-        musicas.remove(musica);
+    public void listarMusicas() {
+        for (Musica m : musicas) {
+            System.out.println(m.getTitulo());
+        }
     }
 
-    public List<Musica> listarMusicas() {
-        return new ArrayList<>(musicas);
+    public List<Musica> getMusicas() {
+        return musicas;
     }
 }
